@@ -2,12 +2,19 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 I have built a full stack real-time Chat App by using: 
 -Next.js, 
+
 -Next Auth for authentication, 
+
 -MongoDB for all database management, 
+
 -Pusher for Real-time messaging, 
+
 -React-Hook-Form for form validation, 
+
 -Tailwind CSS for a stunning UI design, 
+
 -Next Cloudinary for image upload and storage.
+
 ## ![3](https://github.com/KaSofi/live-chat/assets/103929930/5dfae263-4fdd-4bc8-84cb-e215f26f047a)
 
 
