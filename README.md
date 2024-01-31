@@ -1,6 +1,9 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+
+
+## ![3](https://github.com/KaSofi/live-chat/assets/103929930/5dfae263-4fdd-4bc8-84cb-e215f26f047a)
+Getting Started
 
 First, run the development server:
 
