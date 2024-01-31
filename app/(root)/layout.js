@@ -7,7 +7,7 @@ import BottomBar from "@components/BottomBar";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Chatting Project",
+  title: "Live-Chat Project",
   description: "Chat App Next.js MongoDB",
 };
 

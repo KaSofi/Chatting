@@ -7,6 +7,7 @@
     width: 3px;
     height: 3px;
     border-radius: 2px;
+    color: #c6c7c7
   }
 }
 
@@ -81,12 +82,12 @@
 }
 
 .btn {
-  @apply flex items-center justify-center rounded-xl p-3 bg-gradient-to-l from-blue-1 to-blue-3 text-body-bold text-white;
+  @apply flex items-center justify-center rounded-xl p-3 bg-gradient-to-l from-yellow-1 to-yellow-1 text-body-bold text-navy-1;
 }
 
 /* Chat List */
 .chat-list {
-  @apply h-screen flex flex-col gap-5 pb-20;
+  @apply h-3/4 flex flex-col gap-5 pb-20;
 }
 
 .input-search {
@@ -140,7 +141,7 @@
 }
 
 .selected-contact {
-  @apply text-base-bold p-2 bg-pink-1 rounded-lg;
+  @apply text-base-bold p-2 bg-grey-4 text-white rounded-lg;
 }
 
 /* ChatDetails */
@@ -179,7 +180,7 @@
 }
 
 .message-text-sender {
-  @apply w-fit bg-purple-2 text-white p-3 rounded-lg text-base-medium;
+  @apply w-fit bg-grey-3 text-white p-3 rounded-lg text-base-medium;
 }
 
 /* Message Input */

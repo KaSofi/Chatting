@@ -117,6 +117,7 @@ module.exports = {
         "grey-1": "#737373",
         "grey-2": "#f0f0f0",
         "grey-3": "#8B8B8B",
+        "grey-4": "#c6c7c7",
         "red-1": "#FF5252",
         "purple-1": "#C6D4FF",
         "purple-2": "#4D426D",
@@ -125,6 +126,8 @@ module.exports = {
         "pink-1": "#FDDAD6",
         "navy-1" : "#004aad",
         "yellow-1": "#f4c507",
+        "yellow-2": "#fcfc00",
+        "orange": "#ffa600"
         
       },
     },

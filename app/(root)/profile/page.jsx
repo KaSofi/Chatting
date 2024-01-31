@@ -86,7 +86,7 @@ const Profile = () => {
             src={
               watch("profileImage") ||
               user?.profileImage ||
-              "/assets/men1.jpg"
+              "/assets/men1.png"
             }
             alt="profile"
             className="w-40 h-40 rounded-full"

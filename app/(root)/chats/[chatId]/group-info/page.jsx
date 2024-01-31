@@ -93,7 +93,7 @@ const GroupInfo = () => {
 
         <div className="flex items-center justify-between">
           <img
-            src={watch("groupPhoto") || "/assets/group.jpg"}
+            src={watch("groupPhoto") || "/assets/group.png"}
             alt="profile"
             className="w-40 h-40 rounded-full"
           />

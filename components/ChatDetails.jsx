@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useRef } from "react";
 import Loader from "./Loader";
-import { AddPhotoAlternate } from "@mui/icons-material";
+import { AddPhotoAlternate, DisabledByDefault } from "@mui/icons-material";
 import { useSession } from "next-auth/react";
 import Link from "next/link";
 import { CldUploadButton } from "next-cloudinary";
@@ -55,9 +55,9 @@ const ChatDetails = ({ chatId }) => {
           text,
         }),
       });
-
+        
       if (res.ok) {
-        setText("");
+        setText('') 
       }
     } catch (err) {
       console.log(err);
@@ -106,14 +106,14 @@ const ChatDetails = ({ chatId }) => {
 
 
 
-  /* Scrolling down to the bottom when having the new message */
+  /*Scrolling down to the bottom when having the new message */
 
   const bottomRef = useRef(null);
 
   useEffect(() => {
     bottomRef.current?.scrollIntoView({
       behavior: "smooth",
-    });
+    })
   }, [chat?.messages]);
 
   return loading ? (
@@ -126,7 +126,7 @@ const ChatDetails = ({ chatId }) => {
             <>
               <Link href={`/chats/${chatId}/group-info`}>
                 <img
-                  src={chat?.groupPhoto || "/assets/group.jpg"}
+                  src={chat?.groupPhoto || "/assets/group.png"}
                   alt="group-photo"
                   className="profilePhoto"
                 />
@@ -142,7 +142,7 @@ const ChatDetails = ({ chatId }) => {
           ) : (
             <>
               <img
-                src={otherMembers[0].profileImage || "/assets/men1.jpg"}
+                src={otherMembers[0].profileImage || "/assets/men1.png"}
                 alt="profile photo"
                 className="profilePhoto"
               />
@@ -161,7 +161,7 @@ const ChatDetails = ({ chatId }) => {
               currentUser={currentUser}
             />
           ))}
-          <div ref={bottomRef} />
+          <div ref={bottomRef} /> 
         </div> 
 
         <div className="send-message">
@@ -191,8 +191,9 @@ const ChatDetails = ({ chatId }) => {
             />
           </div>
 
-          <div onClick={sendText}>
-            <img src="/assets/send.svg" alt="send" className="send-icon" />
+          <div onClick={sendText}
+              >
+            <img src="/assets/send.svg" alt="send" className="send-icon"/>
           </div>
         </div>
       </div>
