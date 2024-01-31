@@ -19,25 +19,25 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <Link href="/chats">
-        <img src="/assets/chatlogo.png" alt="logo" className="logo" />
+        <img src="/assets/live-chat.png" alt="logo" className="logo" />
       </Link>
 
       <div className="menu">
         <Link
           href="/chats"
           className={`${
-            pathname === "/chats" ? "text-red-1" : ""
+            pathname === "/chats" ? "text-yellow-1" : "text-navy-1"
           } text-heading4-bold`}
         >
-          Chats
+          Чаты
         </Link>
         <Link
           href="/contacts"
           className={`${
-            pathname === "/contacts" ? "text-red-1" : ""
+            pathname === "/contacts" ? "text-yellow-1" : "text-navy-1"
           } text-heading4-bold`}
         >
-          Contacts
+          Контакты
         </Link>
 
         <Logout

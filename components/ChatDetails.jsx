@@ -126,7 +126,7 @@ const ChatDetails = ({ chatId }) => {
             <>
               <Link href={`/chats/${chatId}/group-info`}>
                 <img
-                  src={chat?.groupPhoto || "/assets/group.svg"}
+                  src={chat?.groupPhoto || "/assets/group.jpg"}
                   alt="group-photo"
                   className="profilePhoto"
                 />
@@ -135,7 +135,7 @@ const ChatDetails = ({ chatId }) => {
               <div className="text">
                 <p>
                   {chat?.name} &#160; &#183; &#160; {chat?.members?.length}{" "}
-                  members
+                  человек
                 </p>
               </div>
             </>
@@ -183,7 +183,7 @@ const ChatDetails = ({ chatId }) => {
 
             <input
               type="text"
-              placeholder="Write a message..."
+              placeholder="Напишите сообщение..."
               className="input-field"
               value={text}
               onChange={(e) => setText(e.target.value)}

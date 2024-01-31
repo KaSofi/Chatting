@@ -58,21 +58,21 @@ const Profile = () => {
     <Loader />
   ) : (
     <div className="profile-page">
-      <h1 className="text-heading3-bold">Edit Your Profile</h1>
+      <h1 className="text-heading3-bold">Редактировать</h1>
 
       <form className="edit-profile" onSubmit={handleSubmit(updateUser)}>
         <div className="input">
           <input
             {...register("username", {
-              required: "Username is required",
+              required: "добавьте имя",
               validate: (value) => {
                 if (value.length < 3) {
-                  return "Username must be at least 3 characters";
+                  return "Имя должно быть больше 3 букв";
                 }
               },
             })}
             type="text"
-            placeholder="Username"
+            placeholder="Имя пользователя"
             className="input-field"
           />
           <PersonOutline sx={{ color: "#737373" }} />
@@ -96,12 +96,12 @@ const Profile = () => {
             onUpload={uploadPhoto}
             uploadPreset="ffa3ie9o"
           >
-            <p className="text-body-bold">Upload new photo</p>
+            <p className="text-body-bold">Загрузить фото</p>
           </CldUploadButton>
         </div>
 
         <button className="btn" type="submit">
-          Save Changes
+          Сохранить
         </button>
       </form>
     </div>

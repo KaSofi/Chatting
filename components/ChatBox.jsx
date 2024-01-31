@@ -23,7 +23,7 @@ const ChatBox = ({ chat, currentUser, currentChatId }) => {
           <div className="chat-info">
             {chat?.isGroup ? (
               <img
-                src={chat?.groupPhoto || "/assets/group.svg"}
+                src={chat?.groupPhoto || "/assets/group.jpg"}
                 alt="group-photo"
                 className="profilePhoto"
               />
@@ -42,18 +42,18 @@ const ChatBox = ({ chat, currentUser, currentChatId }) => {
                 <p className="text-base-bold">{otherMembers[0]?.username}</p>
               )}
     
-              {!lastMessage && <p className="text-small-bold">Started a chat</p>}
+              {!lastMessage && <p className="text-small-bold">Начать чат</p>}
     
               {lastMessage?.photo ? (
                 lastMessage?.sender?._id === currentUser._id ? (
-                  <p className="text-small-medium text-grey-3">You sent a photo</p>
+                  <p className="text-small-medium text-grey-3">Вы отправили фото</p>
                 ) : (
                   <p
                     className={`${
                       seen ? "text-small-medium text-grey-3" : "text-small-bold"
                     }`}
                   >
-                    Received a photo
+                    Получено фото
                   </p>
                 )
               ) : (

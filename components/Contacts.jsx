@@ -76,7 +76,7 @@ const Contacts = () => {
   ) : (
     <div className="create-chat-container">
       <input
-        placeholder="Search contact..."
+        placeholder="Найти контакт..."
         className="input-search"
         value={search}
         onChange={(e) => setSearch(e.target.value)}
@@ -84,7 +84,7 @@ const Contacts = () => {
 
       <div className="contact-bar">
         <div className="contact-list">
-          <p className="text-body-bold">Select or Deselect</p>
+          <p className="text-body-bold">Выбрать учасников чата</p>
 
           <div className="flex flex-col flex-1 gap-5 overflow-y-scroll custom-scrollbar">
             {contacts.map((user, index) => (
@@ -94,7 +94,7 @@ const Contacts = () => {
                 onClick={() => handleSelect(user)}
               >
                 {selectedContacts.find((item) => item === user) ? (
-                  <CheckCircle sx={{ color: "red" }} />
+                  <CheckCircle sx={{ color: "orange" }} />
                 ) : (
                   <RadioButtonUnchecked />
                 )}
@@ -113,9 +113,9 @@ const Contacts = () => {
           {isGroup && (
             <>
               <div className="flex flex-col gap-3">
-                <p className="text-body-bold">Group Chat Name</p>
+                <p className="text-body-bold">Название чата/группы</p>
                 <input
-                  placeholder="Enter group chat name..."
+                  placeholder="Добавить название группы..."
                   className="input-group-name"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
@@ -123,7 +123,7 @@ const Contacts = () => {
               </div>
 
               <div className="flex flex-col gap-3">
-                <p className="text-body-bold">Members</p>
+                <p className="text-body-bold">человек</p>
                 <div className="flex flex-wrap gap-3">
                   {selectedContacts.map((contact, index) => (
                     <p className="selected-contact" key={index}>
@@ -139,7 +139,7 @@ const Contacts = () => {
             onClick={createChat}
             disabled={selectedContacts.length === 0}
           >
-            FIND OR START A NEW CHAT
+            НОВЫЙ ЧАТ
           </button>
         </div>
       </div>

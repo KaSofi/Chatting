@@ -41,9 +41,9 @@ const ChatList = ({ currentChatId }) => {
     
           const handleChatUpdate = (updatedChat) => {
             setChats((allChats) =>
-              allChats.map((chat) => {
+              allChats.map((chat, _id) => {
                 if (chat._id === updatedChat.id) {
-                  return { ...chat, messages: updatedChat.messages };
+                  return {key: _id}, { ...chat, messages: updatedChat.messages };
                 } else {
                   return chat;
                 }
@@ -72,13 +72,14 @@ const ChatList = ({ currentChatId }) => {
         <Loader />
       ) : (
     <div className='chat-list'>
-        <input type="text" placeholder='Search chat...' className='input-search'  value={search} onChange={(e) => setSearch(e.target.value)}/>
+        <input type="text" placeholder='Найти чат...' className='input-search'  value={search} onChange={(e) => setSearch(e.target.value)}/>
 
       <div className="chats">
         {chats?.map((chat, index) => (
           <ChatBox
             chat={chat}
             index={index}
+            key={index}
             currentUser={currentUser}
             currentChatId={currentChatId}
           />

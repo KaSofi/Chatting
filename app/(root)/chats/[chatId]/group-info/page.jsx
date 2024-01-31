@@ -1,7 +1,7 @@
 "use client";
 
 import Loader from "@components/Loader";
-import { GroupOutlined, PersonOutline } from "@mui/icons-material";
+import { GroupOutlined } from "@mui/icons-material";
 import { CldUploadButton } from "next-cloudinary";
 import { useParams, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -75,16 +75,16 @@ const GroupInfo = () => {
     <Loader />
   ) : (
     <div className="profile-page">
-      <h1 className="text-heading3-bold">Edit Group Info</h1>
+      <h1 className="text-heading3-bold">Редактировать</h1>
 
       <form className="edit-profile" onSubmit={handleSubmit(updateGroupChat)}>
         <div className="input">
           <input
             {...register("name", {
-              required: "Group chat name is required",
+              required: "добавьте название группы",
             })}
             type="text"
-            placeholder="Group chat name"
+            placeholder="Название группы"
             className="input-field"
           />
           <GroupOutlined sx={{ color: "#737373" }} />
@@ -93,7 +93,7 @@ const GroupInfo = () => {
 
         <div className="flex items-center justify-between">
           <img
-            src={watch("groupPhoto") || "/assets/group.svg"}
+            src={watch("groupPhoto") || "/assets/group.jpg"}
             alt="profile"
             className="w-40 h-40 rounded-full"
           />
@@ -102,7 +102,7 @@ const GroupInfo = () => {
             onUpload={uploadPhoto}
             uploadPreset="ffa3ie9o"
           >
-            <p className="text-body-bold">Upload new photo</p>
+            <p className="text-body-bold">Загрузить фото</p>
           </CldUploadButton>
         </div>
 
@@ -113,7 +113,7 @@ const GroupInfo = () => {
         </div>
 
         <button className="btn" type="submit">
-          Save Changes
+          Сохранить
         </button>
       </form>
     </div>

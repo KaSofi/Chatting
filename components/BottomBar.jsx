@@ -20,22 +20,22 @@ const BottomBar = () => {
       <Link
         href="/chats"
         className={`${
-          pathname === "/chats" ? "text-red-1" : ""
+          pathname === "/chats" ? "text-yellow-1" : "text-white"
         } text-heading4-bold`}
       >
-        Chats
+        Чаты
       </Link>
       <Link
         href="/contacts"
         className={`${
-          pathname === "/contacts" ? "text-red-1" : ""
+          pathname === "/contacts" ? "text-yellow-1" : "text-white"
         } text-heading4-bold`}
       >
-        Contacts
+        Контакты
       </Link>
 
       <Logout
-        sx={{ color: "#737373", cursor: "pointer" }}
+        sx={{ color: "white", cursor: "pointer" }}
         onClick={handleLogout}
       />
 

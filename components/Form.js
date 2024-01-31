@@ -51,7 +51,7 @@ const Form = ({ type }) => {
       }
 
       if (res.error) {
-        toast.error("Invalid email or password");
+        toast.error("Неправильный email или пароль");
       }
     }
   };
@@ -61,7 +61,7 @@ const Form = ({ type }) => {
   return (
     <div className="auth">
       <div className="content">
-        <img src="/assets/chatlogo.png" alt="logo" className="logo" />
+        <img src="/assets/login-logo.png" alt="logo" className="logo" />
 
         <form className="form" onSubmit={handleSubmit(onSubmit)}>
           {type === "register" && (
@@ -70,15 +70,15 @@ const Form = ({ type }) => {
                 <input
                   defaultValue=""
                   {...register("username", {
-                    required: "Username is required",
+                    required: "добавьте имя",
                     validate: (value) => {
                       if (value.length < 3) {
-                        return "Username must be at least 3 characters";
+                        return "Имя должно быть больше 3 букв";
                       }
                     },
                   })}
                   type="text"
-                  placeholder="Username"
+                  placeholder="Имя"
                   autoComplete="username"
                   className="input-field"
                 />
@@ -94,7 +94,7 @@ const Form = ({ type }) => {
             <div className="input">
               <input
                 defaultValue=""
-                {...register("email", { required: "Email is required" })}
+                {...register("email", { required: "добавьте email" })}
                 type="email"
                 placeholder="Email"
                 className="input-field"
@@ -111,18 +111,18 @@ const Form = ({ type }) => {
               <input
                 defaultValue=""
                 {...register("password", {
-                  required: "Password is required",
+                  required: "добавьте пароль",
                   validate: (value) => {
                     if (
                       value.length < 5 ||
                       !value.match(/[!@#$%^&*()_+{}\[\]:;<>,.?~\\/-]/)
                     ) {
-                      return "Password must be at least 5 characters and contain at least one special character";
+                      return "Пароль должен иметь более 5 букв и более 1 спец. символа";
                     }
                   },
                 })}
                 type="password"
-                placeholder="Password"
+                placeholder="Пароль"
                 autoComplete="current-password"
                 className="input-field"
               />
@@ -134,17 +134,17 @@ const Form = ({ type }) => {
           </div>
 
           <button className="button" type="submit">
-            {type === "register" ? "Join Free" : "Let's Chat"}
+            {type === "register" ? "Зарегистрироваться" : "Войти"}
           </button>
         </form>
 
         {type === "register" ? (
           <Link href="/" className="link">
-            <p className="text-center">Already have an account? Sign In Here</p>
+            <p className="text-center">Уже есть аккаунт? Войти здесь</p>
           </Link>
         ) : (
           <Link href="/register" className="link">
-            <p className="text-center">Don't have an account? Register Here</p>
+            <p className="text-center">Нет аккаунта? Зарегистрироваться здесь</p>
           </Link>
         )}
       </div>

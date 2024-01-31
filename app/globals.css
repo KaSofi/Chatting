@@ -10,6 +10,7 @@
   }
 }
 
+
 /* Login & Register Pages */
 .auth {
   @apply w-full h-lvh flex items-center justify-center;
@@ -36,11 +37,11 @@
 }
 
 .button {
-  @apply w-full px-5 py-3 mt-5 mb-7 rounded-xl cursor-pointer bg-blue-1 hover:bg-red-1 text-white text-body-bold;
+  @apply w-full px-5 py-3 mt-5 mb-7 rounded-xl cursor-pointer bg-yellow-1 hover:bg-navy-1 hover:text-white text-navy-1 text-body-bold;
 }
 
 .link {
-  @apply text-base-medium hover:text-red-1;
+  @apply text-base-medium text-navy-1 hover:text-red-1;
 }
 
 /* Main Container */
@@ -50,20 +51,20 @@
 
 /* Top Bar */
 .navbar {
-  @apply top-0 sticky px-10 py-5 flex items-center justify-between bg-blue-2;
+  @apply top-0 sticky px-10 flex items-center justify-between bg-blue-2 max-lg:hidden;
 }
 
 .menu {
-  @apply flex items-center gap-8 max-sm:hidden;
+  @apply flex items-center gap-8 max-sm:hidden text-navy-1;
 }
 
 .profilePhoto {
-  @apply w-11 h-11 rounded-full object-cover object-center;
+  @apply w-12 h-12 rounded-full object-cover object-center ;
 }
 
 /* Bottom Bar */
 .bottom-bar {
-  @apply fixed bottom-0 z-50 w-full flex justify-between items-center px-5 py-2 bg-white sm:hidden
+  @apply fixed bottom-0 z-50 w-full flex justify-between items-center px-5 py-2 bg-navy-1 sm:hidden
 }
 
 /* Profile Page */
