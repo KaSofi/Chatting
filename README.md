@@ -1,4 +1,4 @@
-https://live-chat-lovat.vercel.app/
+https://live-chat-tan.vercel.app/
 
 
 I have built a full stack real-time Chat App by using: 
