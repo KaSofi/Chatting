@@ -16,11 +16,8 @@ I have built a full stack real-time Chat App by using:
 
 -Next Cloudinary for image upload and storage.
 
-![Screenshot_20240201_192157_Chrome](https://github.com/KaSofi/live-chat/assets/103929930/b7ef4f90-2b9b-41e8-a7ac-986f19ca8e9c)
+![Screenshot_20240201_192157_Chrome](https://github.com/KaSofi/live-chat/assets/103929930/d5784d95-b38e-41e0-bbaf-de20cc0125ca)![Screenshot_20240201_170236_Chrome](https://github.com/KaSofi/live-chat/assets/103929930/afe32104-92e5-40c5-b636-b37bf17f74c4)![Screenshot_20240201_170310_Chrome](https://github.com/KaSofi/live-chat/assets/103929930/926d1db4-64bf-4b19-8c99-209b911f6a7e)![Screenshot_20240201_170320_Chrome](https://github.com/KaSofi/live-chat/assets/103929930/d9f63bff-c95d-4e58-b7a0-c4c64ed907ce)![Screenshot_20240201_170329_Chrome](https://github.com/KaSofi/live-chat/assets/103929930/809cd0f1-1a1e-4868-a6f9-91167223dc13)![Screenshot_20240201_184922_Chrome](https://github.com/KaSofi/live-chat/assets/103929930/5689970c-0228-4bfa-8786-1aa2f33b172c)
 
-
-![Screenshot_20240201_192157_Chrome](https://github.com/KaSofi/live-chat/assets/103929930/ae860633-ba56-4217-9661-efb8df19d17a)![Screenshot_20240201_170320_Chrome](https://github.com/KaSofi/live-chat/assets/103929930/6b7a9274-a6d7-4555-b607-c5c135b3226d)![Screenshot_20240201_170329_Chrome](https://github.com/KaSofi/live-chat/assets/103929930/323a53b4-8cfd-4cbc-a631-b9384274810b)![Screenshot_20240201_170236_Chrome](https://github.com/KaSofi/live-chat/assets/103929930/c5c5abc2-f29d-4cae-924b-39c07cc030cb)![Screenshot_20240201_184922_Chrome](https://github.com/KaSofi/live-chat/assets/103929930/81ab4576-86f8-4cfd-9fc4-1ff07fb84c11)
-![Screenshot_20240201_170310_Chrome](https://github.com/KaSofi/live-chat/assets/103929930/57791be9-03e2-41d0-920d-c9e836b8eec1)
 
 
 
